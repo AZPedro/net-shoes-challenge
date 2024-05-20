@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1373CB8C2BFC126400CCC66A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CB8B2BFC126400CCC66A /* AppDelegate.swift */; };
+		1373CB8E2BFC126400CCC66A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */; };
+		1373CB902BFC126400CCC66A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CB8F2BFC126400CCC66A /* ViewController.swift */; };
+		1373CB932BFC126400CCC66A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1373CB922BFC126400CCC66A /* Base */; };
+		1373CB952BFC126600CCC66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1373CB942BFC126600CCC66A /* Assets.xcassets */; };
+		1373CB982BFC126600CCC66A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1373CB972BFC126600CCC66A /* Base */; };
+		1373CBA32BFC126600CCC66A /* netshoes_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBA22BFC126600CCC66A /* netshoes_challengeTests.swift */; };
+		1373CBAD2BFC126600CCC66A /* netshoes_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBAC2BFC126600CCC66A /* netshoes_challengeUITests.swift */; };
+		1373CBAF2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBAE2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1373CB9F2BFC126600CCC66A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1373CB802BFC126400CCC66A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1373CB872BFC126400CCC66A;
+			remoteInfo = "netshoes-challenge";
+		};
+		1373CBA92BFC126600CCC66A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1373CB802BFC126400CCC66A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1373CB872BFC126400CCC66A;
+			remoteInfo = "netshoes-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1373CB882BFC126400CCC66A /* netshoes-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "netshoes-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1373CB8B2BFC126400CCC66A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1373CB8F2BFC126400CCC66A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1373CB922BFC126400CCC66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1373CB942BFC126600CCC66A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1373CB972BFC126600CCC66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1373CB992BFC126600CCC66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1373CB9E2BFC126600CCC66A /* netshoes-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "netshoes-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1373CBA22BFC126600CCC66A /* netshoes_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netshoes_challengeTests.swift; sourceTree = "<group>"; };
+		1373CBA82BFC126600CCC66A /* netshoes-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "netshoes-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1373CBAC2BFC126600CCC66A /* netshoes_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netshoes_challengeUITests.swift; sourceTree = "<group>"; };
+		1373CBAE2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netshoes_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1373CB852BFC126400CCC66A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1373CB9B2BFC126600CCC66A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1373CBA52BFC126600CCC66A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1373CB7F2BFC126400CCC66A = {
+			isa = PBXGroup;
+			children = (
+				1373CB8A2BFC126400CCC66A /* netshoes-challenge */,
+				1373CBA12BFC126600CCC66A /* netshoes-challengeTests */,
+				1373CBAB2BFC126600CCC66A /* netshoes-challengeUITests */,
+				1373CB892BFC126400CCC66A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1373CB892BFC126400CCC66A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1373CB882BFC126400CCC66A /* netshoes-challenge.app */,
+				1373CB9E2BFC126600CCC66A /* netshoes-challengeTests.xctest */,
+				1373CBA82BFC126600CCC66A /* netshoes-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1373CB8A2BFC126400CCC66A /* netshoes-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				1373CB8B2BFC126400CCC66A /* AppDelegate.swift */,
+				1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */,
+				1373CB8F2BFC126400CCC66A /* ViewController.swift */,
+				1373CB912BFC126400CCC66A /* Main.storyboard */,
+				1373CB942BFC126600CCC66A /* Assets.xcassets */,
+				1373CB962BFC126600CCC66A /* LaunchScreen.storyboard */,
+				1373CB992BFC126600CCC66A /* Info.plist */,
+			);
+			path = "netshoes-challenge";
+			sourceTree = "<group>";
+		};
+		1373CBA12BFC126600CCC66A /* netshoes-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBA22BFC126600CCC66A /* netshoes_challengeTests.swift */,
+			);
+			path = "netshoes-challengeTests";
+			sourceTree = "<group>";
+		};
+		1373CBAB2BFC126600CCC66A /* netshoes-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBAC2BFC126600CCC66A /* netshoes_challengeUITests.swift */,
+				1373CBAE2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift */,
+			);
+			path = "netshoes-challengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1373CB872BFC126400CCC66A /* netshoes-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1373CBB22BFC126600CCC66A /* Build configuration list for PBXNativeTarget "netshoes-challenge" */;
+			buildPhases = (
+				1373CB842BFC126400CCC66A /* Sources */,
+				1373CB852BFC126400CCC66A /* Frameworks */,
+				1373CB862BFC126400CCC66A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "netshoes-challenge";
+			productName = "netshoes-challenge";
+			productReference = 1373CB882BFC126400CCC66A /* netshoes-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1373CB9D2BFC126600CCC66A /* netshoes-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1373CBB52BFC126600CCC66A /* Build configuration list for PBXNativeTarget "netshoes-challengeTests" */;
+			buildPhases = (
+				1373CB9A2BFC126600CCC66A /* Sources */,
+				1373CB9B2BFC126600CCC66A /* Frameworks */,
+				1373CB9C2BFC126600CCC66A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1373CBA02BFC126600CCC66A /* PBXTargetDependency */,
+			);
+			name = "netshoes-challengeTests";
+			productName = "netshoes-challengeTests";
+			productReference = 1373CB9E2BFC126600CCC66A /* netshoes-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1373CBA72BFC126600CCC66A /* netshoes-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1373CBB82BFC126600CCC66A /* Build configuration list for PBXNativeTarget "netshoes-challengeUITests" */;
+			buildPhases = (
+				1373CBA42BFC126600CCC66A /* Sources */,
+				1373CBA52BFC126600CCC66A /* Frameworks */,
+				1373CBA62BFC126600CCC66A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1373CBAA2BFC126600CCC66A /* PBXTargetDependency */,
+			);
+			name = "netshoes-challengeUITests";
+			productName = "netshoes-challengeUITests";
+			productReference = 1373CBA82BFC126600CCC66A /* netshoes-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1373CB802BFC126400CCC66A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1373CB872BFC126400CCC66A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					1373CB9D2BFC126600CCC66A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1373CB872BFC126400CCC66A;
+					};
+					1373CBA72BFC126600CCC66A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1373CB872BFC126400CCC66A;
+					};
+				};
+			};
+			buildConfigurationList = 1373CB832BFC126400CCC66A /* Build configuration list for PBXProject "netshoes-challenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1373CB7F2BFC126400CCC66A;
+			productRefGroup = 1373CB892BFC126400CCC66A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1373CB872BFC126400CCC66A /* netshoes-challenge */,
+				1373CB9D2BFC126600CCC66A /* netshoes-challengeTests */,
+				1373CBA72BFC126600CCC66A /* netshoes-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1373CB862BFC126400CCC66A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1373CB952BFC126600CCC66A /* Assets.xcassets in Resources */,
+				1373CB982BFC126600CCC66A /* Base in Resources */,
+				1373CB932BFC126400CCC66A /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1373CB9C2BFC126600CCC66A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1373CBA62BFC126600CCC66A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1373CB842BFC126400CCC66A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1373CB902BFC126400CCC66A /* ViewController.swift in Sources */,
+				1373CB8C2BFC126400CCC66A /* AppDelegate.swift in Sources */,
+				1373CB8E2BFC126400CCC66A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1373CB9A2BFC126600CCC66A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1373CBA32BFC126600CCC66A /* netshoes_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1373CBA42BFC126600CCC66A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1373CBAD2BFC126600CCC66A /* netshoes_challengeUITests.swift in Sources */,
+				1373CBAF2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1373CBA02BFC126600CCC66A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1373CB872BFC126400CCC66A /* netshoes-challenge */;
+			targetProxy = 1373CB9F2BFC126600CCC66A /* PBXContainerItemProxy */;
+		};
+		1373CBAA2BFC126600CCC66A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1373CB872BFC126400CCC66A /* netshoes-challenge */;
+			targetProxy = 1373CBA92BFC126600CCC66A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1373CB912BFC126400CCC66A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1373CB922BFC126400CCC66A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1373CB962BFC126600CCC66A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1373CB972BFC126600CCC66A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1373CBB02BFC126600CCC66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1373CBB12BFC126600CCC66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1373CBB32BFC126600CCC66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEP9UKL7GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "netshoes-challenge/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "luzalabs.netshoes-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1373CBB42BFC126600CCC66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEP9UKL7GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "netshoes-challenge/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "luzalabs.netshoes-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1373CBB62BFC126600CCC66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEP9UKL7GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "luzalabs.netshoes-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/netshoes-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/netshoes-challenge";
+			};
+			name = Debug;
+		};
+		1373CBB72BFC126600CCC66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEP9UKL7GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "luzalabs.netshoes-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/netshoes-challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/netshoes-challenge";
+			};
+			name = Release;
+		};
+		1373CBB92BFC126600CCC66A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEP9UKL7GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "luzalabs.netshoes-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "netshoes-challenge";
+			};
+			name = Debug;
+		};
+		1373CBBA2BFC126600CCC66A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WEP9UKL7GT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "luzalabs.netshoes-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "netshoes-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1373CB832BFC126400CCC66A /* Build configuration list for PBXProject "netshoes-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1373CBB02BFC126600CCC66A /* Debug */,
+				1373CBB12BFC126600CCC66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1373CBB22BFC126600CCC66A /* Build configuration list for PBXNativeTarget "netshoes-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1373CBB32BFC126600CCC66A /* Debug */,
+				1373CBB42BFC126600CCC66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1373CBB52BFC126600CCC66A /* Build configuration list for PBXNativeTarget "netshoes-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1373CBB62BFC126600CCC66A /* Debug */,
+				1373CBB72BFC126600CCC66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1373CBB82BFC126600CCC66A /* Build configuration list for PBXNativeTarget "netshoes-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1373CBB92BFC126600CCC66A /* Debug */,
+				1373CBBA2BFC126600CCC66A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1373CB802BFC126400CCC66A /* Project object */;
+}
