@@ -15,6 +15,10 @@
 		1373CBA32BFC126600CCC66A /* netshoes_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBA22BFC126600CCC66A /* netshoes_challengeTests.swift */; };
 		1373CBAD2BFC126600CCC66A /* netshoes_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBAC2BFC126600CCC66A /* netshoes_challengeUITests.swift */; };
 		1373CBAF2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBAE2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift */; };
+		1373CBC22BFC18FA00CCC66A /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBC12BFC18FA00CCC66A /* HomeListViewController.swift */; };
+		1373CBC72BFC194500CCC66A /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBC62BFC194500CCC66A /* HomeListViewModel.swift */; };
+		1373CBCB2BFC199400CCC66A /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCA2BFC199400CCC66A /* HomeListView.swift */; };
+		1373CBCD2BFC19B700CCC66A /* HomeListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCC2BFC19B700CCC66A /* HomeListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		1373CBA82BFC126600CCC66A /* netshoes-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "netshoes-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1373CBAC2BFC126600CCC66A /* netshoes_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netshoes_challengeUITests.swift; sourceTree = "<group>"; };
 		1373CBAE2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = netshoes_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1373CBC12BFC18FA00CCC66A /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
+		1373CBC62BFC194500CCC66A /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
+		1373CBCA2BFC199400CCC66A /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
+		1373CBCC2BFC19B700CCC66A /* HomeListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,8 @@
 		1373CB8A2BFC126400CCC66A /* netshoes-challenge */ = {
 			isa = PBXGroup;
 			children = (
-				1373CB8B2BFC126400CCC66A /* AppDelegate.swift */,
-				1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */,
-				1373CB8F2BFC126400CCC66A /* ViewController.swift */,
-				1373CB942BFC126600CCC66A /* Assets.xcassets */,
-				1373CB962BFC126600CCC66A /* LaunchScreen.storyboard */,
-				1373CB992BFC126600CCC66A /* Info.plist */,
+				1373CBBD2BFC178F00CCC66A /* Application */,
+				1373CBBE2BFC179D00CCC66A /* Resources */,
 			);
 			path = "netshoes-challenge";
 			sourceTree = "<group>";
@@ -122,6 +126,86 @@
 				1373CBAE2BFC126600CCC66A /* netshoes_challengeUITestsLaunchTests.swift */,
 			);
 			path = "netshoes-challengeUITests";
+			sourceTree = "<group>";
+		};
+		1373CBBB2BFC177400CCC66A /* HomeList */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBC52BFC190B00CCC66A /* ViewModel */,
+				1373CBC42BFC190500CCC66A /* View */,
+				1373CBC32BFC18FF00CCC66A /* Model */,
+			);
+			path = HomeList;
+			sourceTree = "<group>";
+		};
+		1373CBBC2BFC178200CCC66A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1373CBBD2BFC178F00CCC66A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBCE2BFC19CF00CCC66A /* NetworkService */,
+				1373CBBF2BFC189900CCC66A /* Scenes */,
+				1373CB8B2BFC126400CCC66A /* AppDelegate.swift */,
+				1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */,
+				1373CB8F2BFC126400CCC66A /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1373CBBE2BFC179D00CCC66A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1373CB942BFC126600CCC66A /* Assets.xcassets */,
+				1373CB962BFC126600CCC66A /* LaunchScreen.storyboard */,
+				1373CB992BFC126600CCC66A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1373CBBF2BFC189900CCC66A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBBB2BFC177400CCC66A /* HomeList */,
+				1373CBBC2BFC178200CCC66A /* Details */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1373CBC32BFC18FF00CCC66A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1373CBC42BFC190500CCC66A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBCA2BFC199400CCC66A /* HomeListView.swift */,
+				1373CBCC2BFC19B700CCC66A /* HomeListCollectionViewCell.swift */,
+				1373CBC12BFC18FA00CCC66A /* HomeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1373CBC52BFC190B00CCC66A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBC62BFC194500CCC66A /* HomeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1373CBCE2BFC19CF00CCC66A /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +339,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1373CB902BFC126400CCC66A /* ViewController.swift in Sources */,
+				1373CBC72BFC194500CCC66A /* HomeListViewModel.swift in Sources */,
 				1373CB8C2BFC126400CCC66A /* AppDelegate.swift in Sources */,
+				1373CBCD2BFC19B700CCC66A /* HomeListCollectionViewCell.swift in Sources */,
+				1373CBCB2BFC199400CCC66A /* HomeListView.swift in Sources */,
 				1373CB8E2BFC126400CCC66A /* SceneDelegate.swift in Sources */,
+				1373CBC22BFC18FA00CCC66A /* HomeListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +520,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WEP9UKL7GT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "netshoes-challenge/Info.plist";
+				INFOPLIST_FILE = "netshoes-challenge/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -460,7 +548,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WEP9UKL7GT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "netshoes-challenge/Info.plist";
+				INFOPLIST_FILE = "netshoes-challenge/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
