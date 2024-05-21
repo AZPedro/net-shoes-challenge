@@ -29,6 +29,8 @@
 		1373CBE52BFCCCAC00CCC66A /* HomeListModelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBE42BFCCCAC00CCC66A /* HomeListModelDTO.swift */; };
 		13B54A662BFD3F270054513D /* OwnerModelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B54A652BFD3F270054513D /* OwnerModelDTO.swift */; };
 		13B54A682BFD3F500054513D /* FileModelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B54A672BFD3F500054513D /* FileModelDTO.swift */; };
+		13B54A6B2BFD49130054513D /* InfoDetailComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B54A6A2BFD49130054513D /* InfoDetailComponentView.swift */; };
+		13B54A702BFD49540054513D /* InfoDetailComponentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B54A6F2BFD49540054513D /* InfoDetailComponentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		1373CBE42BFCCCAC00CCC66A /* HomeListModelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListModelDTO.swift; sourceTree = "<group>"; };
 		13B54A652BFD3F270054513D /* OwnerModelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModelDTO.swift; sourceTree = "<group>"; };
 		13B54A672BFD3F500054513D /* FileModelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModelDTO.swift; sourceTree = "<group>"; };
+		13B54A6A2BFD49130054513D /* InfoDetailComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailComponentView.swift; sourceTree = "<group>"; };
+		13B54A6F2BFD49540054513D /* InfoDetailComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailComponentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 				1373CBE02BFCC55F00CCC66A /* Utils */,
 				1373CBCE2BFC19CF00CCC66A /* NetworkService */,
 				1373CBBF2BFC189900CCC66A /* Scenes */,
+				13B54A692BFD48BA0054513D /* Components */,
 				1373CB8B2BFC126400CCC66A /* AppDelegate.swift */,
 				1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */,
 			);
@@ -268,6 +273,39 @@
 				1373CBDE2BFCC29900CCC66A /* LoadGistRequestModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		13B54A692BFD48BA0054513D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				13B54A6C2BFD492F0054513D /* InfoDetailComponent */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		13B54A6C2BFD492F0054513D /* InfoDetailComponent */ = {
+			isa = PBXGroup;
+			children = (
+				13B54A6E2BFD49410054513D /* Model */,
+				13B54A6D2BFD493C0054513D /* Views */,
+			);
+			path = InfoDetailComponent;
+			sourceTree = "<group>";
+		};
+		13B54A6D2BFD493C0054513D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				13B54A6A2BFD49130054513D /* InfoDetailComponentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13B54A6E2BFD49410054513D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13B54A6F2BFD49540054513D /* InfoDetailComponentModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +441,7 @@
 				1373CBD62BFC26EB00CCC66A /* NetworkService.swift in Sources */,
 				13B54A662BFD3F270054513D /* OwnerModelDTO.swift in Sources */,
 				1373CBDB2BFCC1B100CCC66A /* GistRequestProvider.swift in Sources */,
+				13B54A702BFD49540054513D /* InfoDetailComponentModel.swift in Sources */,
 				1373CBC72BFC194500CCC66A /* HomeListViewModel.swift in Sources */,
 				1373CBE22BFCC57400CCC66A /* Encodable+extensions.swift in Sources */,
 				1373CB8C2BFC126400CCC66A /* AppDelegate.swift in Sources */,
@@ -417,6 +456,7 @@
 				1373CBC22BFC18FA00CCC66A /* HomeListViewController.swift in Sources */,
 				1373CBD02BFC1D4100CCC66A /* HomeListViewModelProtocol.swift in Sources */,
 				1373CBE52BFCCCAC00CCC66A /* HomeListModelDTO.swift in Sources */,
+				13B54A6B2BFD49130054513D /* InfoDetailComponentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

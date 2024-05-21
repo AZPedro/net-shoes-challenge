@@ -13,9 +13,70 @@ final class HomeListTableViewCell: UITableViewCell {
     
     struct Constants {
         static let cellIdentifier: String = "homeListTableViewCellReusableIdentifier"
+        static let avatarImageSize: CGFloat = 64
+        static let leftTopBottomMargins: CGFloat = 8
     }
     
     // MARK: - Layout
+    
+    private lazy var horizontalStackContent: UIStackView = {
+        let stack = UIStackView()
+        
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .horizontal
+        stack.alignment = .center
+        stack.spacing = 8
+        stack.addArrangedSubview(avatarImageStackView)
+        stack.addArrangedSubview(verticalStackContent)
+        
+        return stack
+    }()
+    
+    private lazy var avatarImageStackView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .vertical
+        stack.addArrangedSubview(avatarImageView)
+        
+        return stack
+    }()
+    
+    private lazy var avatarImageView: UIImageView = {
+        let view = UIImageView()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.clipsToBounds = true
+        view.layer.cornerRadius = (Constants.avatarImageSize / 2)
+        
+        view.widthAnchor.constraint(equalToConstant: Constants.avatarImageSize).isActive = true
+        view.heightAnchor.constraint(equalToConstant: Constants.avatarImageSize).isActive = true
+        view.backgroundColor = .red
+        
+        return view
+    }()
+    
+    private lazy var verticalStackContent: UIStackView = {
+        let stack = UIStackView()
+    
+        stack.axis = .vertical
+        stack.spacing = Constants.leftTopBottomMargins
+        stack.alignment = .leading
+        stack.addArrangedSubview(nameInfoComponentView)
+        stack.addArrangedSubview(fileInfoComponentView)
+        
+        return stack
+    }()
+    
+    private lazy var nameInfoComponentView: InfoDetailComponentView = {
+        let view = InfoDetailComponentView()
+        view.model = .init(title: "Usuário - ", value: "AZPedro")
+        return view
+    }()
+    
+    private lazy var fileInfoComponentView: InfoDetailComponentView = {
+        let view = InfoDetailComponentView()
+        view.model = .init(title: "Arquivos - ", value: "13")
+        return view
+    }()
     
     // MARK: - LifeCycle
     
@@ -31,6 +92,12 @@ final class HomeListTableViewCell: UITableViewCell {
     // MARK: - Private functions
     
     private func setupUI() {
-        backgroundColor = .systemPink
+        contentView.addSubview(horizontalStackContent)
+        NSLayoutConstraint.activate([
+            horizontalStackContent.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.leftTopBottomMargins),
+            horizontalStackContent.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.leftTopBottomMargins),
+            horizontalStackContent.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Constants.leftTopBottomMargins),
+            horizontalStackContent.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+        ])
     }
 }
