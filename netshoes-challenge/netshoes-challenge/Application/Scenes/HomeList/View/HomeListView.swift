@@ -13,6 +13,12 @@ protocol HomeListViewDelegate: AnyObject {
 
 final class HomeListView: UIView {
     
+    // MARK: - Constants
+    
+    struct Constants {
+        static let cellHeight: CGFloat = 80
+    }
+    
     // MARK: - Layout
     
     private lazy var tableView: UITableView = {
@@ -20,6 +26,11 @@ final class HomeListView: UIView {
 
         tableView.backgroundColor = .white
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        tableView.register(HomeListTableViewCell.self, forCellReuseIdentifier: HomeListTableViewCell.Constants.cellIdentifier)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
 
         return tableView
     }()

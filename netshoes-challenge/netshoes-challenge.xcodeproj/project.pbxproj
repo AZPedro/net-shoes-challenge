@@ -19,6 +19,8 @@
 		1373CBCB2BFC199400CCC66A /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCA2BFC199400CCC66A /* HomeListView.swift */; };
 		1373CBCD2BFC19B700CCC66A /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCC2BFC19B700CCC66A /* HomeListTableViewCell.swift */; };
 		1373CBD02BFC1D4100CCC66A /* HomeListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCF2BFC1D4100CCC66A /* HomeListViewModelProtocol.swift */; };
+		1373CBD22BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBD12BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift */; };
+		1373CBD42BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBD32BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		1373CBCA2BFC199400CCC66A /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		1373CBCC2BFC19B700CCC66A /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
 		1373CBCF2BFC1D4100CCC66A /* HomeListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModelProtocol.swift; sourceTree = "<group>"; };
+		1373CBD12BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeListView+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		1373CBD32BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeListView+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				1373CBCA2BFC199400CCC66A /* HomeListView.swift */,
+				1373CBD12BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift */,
+				1373CBD32BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift */,
 				1373CBCC2BFC19B700CCC66A /* HomeListTableViewCell.swift */,
 				1373CBC12BFC18FA00CCC66A /* HomeListViewController.swift */,
 			);
@@ -342,6 +348,8 @@
 				1373CB8C2BFC126400CCC66A /* AppDelegate.swift in Sources */,
 				1373CBCD2BFC19B700CCC66A /* HomeListTableViewCell.swift in Sources */,
 				1373CBCB2BFC199400CCC66A /* HomeListView.swift in Sources */,
+				1373CBD22BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift in Sources */,
+				1373CBD42BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift in Sources */,
 				1373CB8E2BFC126400CCC66A /* SceneDelegate.swift in Sources */,
 				1373CBC22BFC18FA00CCC66A /* HomeListViewController.swift in Sources */,
 				1373CBD02BFC1D4100CCC66A /* HomeListViewModelProtocol.swift in Sources */,

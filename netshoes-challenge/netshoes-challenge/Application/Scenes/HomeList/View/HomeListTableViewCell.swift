@@ -9,6 +9,12 @@ import UIKit
 
 final class HomeListTableViewCell: UITableViewCell {
     
+    // MARK: - Constants
+    
+    struct Constants {
+        static let cellIdentifier: String = "homeListTableViewCellReusableIdentifier"
+    }
+    
     // MARK: - Layout
     
     // MARK: - LifeCycle
@@ -25,6 +31,6 @@ final class HomeListTableViewCell: UITableViewCell {
     // MARK: - Private functions
     
     private func setupUI() {
-        
+        backgroundColor = .systemPink
     }
 }
