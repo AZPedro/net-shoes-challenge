@@ -20,7 +20,7 @@ final class HomeListViewModel: HomeListViewModelProtocol {
     func loadGists(for page: Int, quantity: Int) {
         let requestModel = LoadGistRequestModel(page: "\(page)", quantity: "\(quantity)")
         
-        provider.loadGists(requestModel: requestModel) { [weak self] (result: Result<String, Error>) in
+        provider.loadGists(requestModel: requestModel) { [weak self] (result: Result<[HomeListModelDTO], Error>) in
             switch result {
             case .success(let model):
                 self?.onloadGistsResult?()

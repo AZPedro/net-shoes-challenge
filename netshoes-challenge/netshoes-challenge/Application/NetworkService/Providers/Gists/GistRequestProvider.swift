@@ -15,7 +15,7 @@ protocol GistRequestProviderProtocol {
 final class GistRequestProvider: GistRequestProviderProtocol {
     
     private let service: NetworkServiceProtocol
-    private let publicGistBaseURL: String = "https://api.github.com/gists/public"
+    private let path: String = "https://api.github.com/gists/public"
     
     init(service: NetworkServiceProtocol) {
         self.service = service
@@ -24,7 +24,7 @@ final class GistRequestProvider: GistRequestProviderProtocol {
     func loadGists<T>(requestModel: LoadGistRequestModel, completion: ((Result<T, Error>) -> Void)?) where T : Decodable {
         let parameters = requestModel.dictionary as? [String: String] ?? [:]
         
-        service.request(urlPath: publicGistBaseURL,
+        service.request(urlPath: path,
                         parameters: parameters,
                         completion: completion)
     }
