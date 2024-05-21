@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1373CB8C2BFC126400CCC66A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CB8B2BFC126400CCC66A /* AppDelegate.swift */; };
 		1373CB8E2BFC126400CCC66A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */; };
-		1373CB902BFC126400CCC66A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CB8F2BFC126400CCC66A /* ViewController.swift */; };
 		1373CB952BFC126600CCC66A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1373CB942BFC126600CCC66A /* Assets.xcassets */; };
 		1373CB982BFC126600CCC66A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1373CB972BFC126600CCC66A /* Base */; };
 		1373CBA32BFC126600CCC66A /* netshoes_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBA22BFC126600CCC66A /* netshoes_challengeTests.swift */; };
@@ -18,7 +17,8 @@
 		1373CBC22BFC18FA00CCC66A /* HomeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBC12BFC18FA00CCC66A /* HomeListViewController.swift */; };
 		1373CBC72BFC194500CCC66A /* HomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBC62BFC194500CCC66A /* HomeListViewModel.swift */; };
 		1373CBCB2BFC199400CCC66A /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCA2BFC199400CCC66A /* HomeListView.swift */; };
-		1373CBCD2BFC19B700CCC66A /* HomeListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCC2BFC19B700CCC66A /* HomeListCollectionViewCell.swift */; };
+		1373CBCD2BFC19B700CCC66A /* HomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCC2BFC19B700CCC66A /* HomeListTableViewCell.swift */; };
+		1373CBD02BFC1D4100CCC66A /* HomeListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCF2BFC1D4100CCC66A /* HomeListViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		1373CB882BFC126400CCC66A /* netshoes-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "netshoes-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1373CB8B2BFC126400CCC66A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1373CB8F2BFC126400CCC66A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1373CB942BFC126600CCC66A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1373CB972BFC126600CCC66A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1373CB992BFC126600CCC66A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,7 +53,8 @@
 		1373CBC12BFC18FA00CCC66A /* HomeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewController.swift; sourceTree = "<group>"; };
 		1373CBC62BFC194500CCC66A /* HomeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModel.swift; sourceTree = "<group>"; };
 		1373CBCA2BFC199400CCC66A /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
-		1373CBCC2BFC19B700CCC66A /* HomeListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCollectionViewCell.swift; sourceTree = "<group>"; };
+		1373CBCC2BFC19B700CCC66A /* HomeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListTableViewCell.swift; sourceTree = "<group>"; };
+		1373CBCF2BFC1D4100CCC66A /* HomeListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,6 @@
 				1373CBBF2BFC189900CCC66A /* Scenes */,
 				1373CB8B2BFC126400CCC66A /* AppDelegate.swift */,
 				1373CB8D2BFC126400CCC66A /* SceneDelegate.swift */,
-				1373CB8F2BFC126400CCC66A /* ViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -187,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				1373CBCA2BFC199400CCC66A /* HomeListView.swift */,
-				1373CBCC2BFC19B700CCC66A /* HomeListCollectionViewCell.swift */,
+				1373CBCC2BFC19B700CCC66A /* HomeListTableViewCell.swift */,
 				1373CBC12BFC18FA00CCC66A /* HomeListViewController.swift */,
 			);
 			path = View;
@@ -197,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				1373CBC62BFC194500CCC66A /* HomeListViewModel.swift */,
+				1373CBCF2BFC1D4100CCC66A /* HomeListViewModelProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -338,13 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1373CB902BFC126400CCC66A /* ViewController.swift in Sources */,
 				1373CBC72BFC194500CCC66A /* HomeListViewModel.swift in Sources */,
 				1373CB8C2BFC126400CCC66A /* AppDelegate.swift in Sources */,
-				1373CBCD2BFC19B700CCC66A /* HomeListCollectionViewCell.swift in Sources */,
+				1373CBCD2BFC19B700CCC66A /* HomeListTableViewCell.swift in Sources */,
 				1373CBCB2BFC199400CCC66A /* HomeListView.swift in Sources */,
 				1373CB8E2BFC126400CCC66A /* SceneDelegate.swift in Sources */,
 				1373CBC22BFC18FA00CCC66A /* HomeListViewController.swift in Sources */,
+				1373CBD02BFC1D4100CCC66A /* HomeListViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
