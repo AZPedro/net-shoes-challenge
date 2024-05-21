@@ -52,7 +52,7 @@ final class HomeListViewController: UIViewController {
         }
         
         viewModel.onShowError = { [weak self] _ in
-            
+            print("Alertar error aqui")
         }
     }
 }

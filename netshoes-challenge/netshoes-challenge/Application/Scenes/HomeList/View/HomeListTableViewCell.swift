@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 struct HomeListCellModel {
     let name: String
     let quantity: String
+    let image: String
 }
 
 final class HomeListTableViewCell: UITableViewCell {
@@ -114,8 +116,16 @@ final class HomeListTableViewCell: UITableViewCell {
     }
     
     private func updateUI(model: HomeListCellModel) {
+        DispatchQueue.main.async {
+            self.avatarImageView.kf.setImage(with: URL(string: model.image), placeholder: nil, options: [
+                .loadDiskFileSynchronously,
+                .cacheOriginalImage,
+                .transition(.fade(0.25))
+            ])
+        }
         nameInfoComponentView.model = .init(value: model.name)
         fileInfoComponentView.model = .init(value: model.quantity)
+        
     }
     
     override func prepareForReuse() {

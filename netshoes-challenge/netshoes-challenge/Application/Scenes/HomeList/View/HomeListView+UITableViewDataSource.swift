@@ -21,7 +21,8 @@ extension HomeListView: UITableViewDataSource {
         
         let model = models[indexPath.row]
         cell.model = .init(name: model.name, 
-                           quantity: model.quantity)
+                           quantity: model.quantity, 
+                           image: model.image)
         
         return cell
     }
