@@ -21,6 +21,11 @@
 		1373CBD02BFC1D4100CCC66A /* HomeListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBCF2BFC1D4100CCC66A /* HomeListViewModelProtocol.swift */; };
 		1373CBD22BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBD12BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift */; };
 		1373CBD42BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBD32BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift */; };
+		1373CBD62BFC26EB00CCC66A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBD52BFC26EB00CCC66A /* NetworkService.swift */; };
+		1373CBD82BFCBEDB00CCC66A /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBD72BFCBEDB00CCC66A /* NetworkServiceError.swift */; };
+		1373CBDB2BFCC1B100CCC66A /* GistRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBDA2BFCC1B100CCC66A /* GistRequestProvider.swift */; };
+		1373CBDF2BFCC29900CCC66A /* LoadGistRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBDE2BFCC29900CCC66A /* LoadGistRequestModel.swift */; };
+		1373CBE22BFCC57400CCC66A /* Encodable+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1373CBE12BFCC57400CCC66A /* Encodable+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		1373CBCF2BFC1D4100CCC66A /* HomeListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListViewModelProtocol.swift; sourceTree = "<group>"; };
 		1373CBD12BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeListView+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		1373CBD32BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeListView+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		1373CBD52BFC26EB00CCC66A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1373CBD72BFCBEDB00CCC66A /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		1373CBDA2BFCC1B100CCC66A /* GistRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistRequestProvider.swift; sourceTree = "<group>"; };
+		1373CBDE2BFCC29900CCC66A /* LoadGistRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGistRequestModel.swift; sourceTree = "<group>"; };
+		1373CBE12BFCC57400CCC66A /* Encodable+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +145,9 @@
 		1373CBBB2BFC177400CCC66A /* HomeList */ = {
 			isa = PBXGroup;
 			children = (
-				1373CBC52BFC190B00CCC66A /* ViewModel */,
-				1373CBC42BFC190500CCC66A /* View */,
 				1373CBC32BFC18FF00CCC66A /* Model */,
+				1373CBC42BFC190500CCC66A /* View */,
+				1373CBC52BFC190B00CCC66A /* ViewModel */,
 			);
 			path = HomeList;
 			sourceTree = "<group>";
@@ -152,6 +162,7 @@
 		1373CBBD2BFC178F00CCC66A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				1373CBE02BFCC55F00CCC66A /* Utils */,
 				1373CBCE2BFC19CF00CCC66A /* NetworkService */,
 				1373CBBF2BFC189900CCC66A /* Scenes */,
 				1373CB8B2BFC126400CCC66A /* AppDelegate.swift */,
@@ -210,8 +221,44 @@
 		1373CBCE2BFC19CF00CCC66A /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				1373CBD52BFC26EB00CCC66A /* NetworkService.swift */,
+				1373CBD72BFCBEDB00CCC66A /* NetworkServiceError.swift */,
+				1373CBD92BFCC18600CCC66A /* Providers */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		1373CBD92BFCC18600CCC66A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBDC2BFCC26500CCC66A /* Gists */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		1373CBDC2BFCC26500CCC66A /* Gists */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBDD2BFCC27200CCC66A /* Model */,
+				1373CBDA2BFCC1B100CCC66A /* GistRequestProvider.swift */,
+			);
+			path = Gists;
+			sourceTree = "<group>";
+		};
+		1373CBDD2BFCC27200CCC66A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBDE2BFCC29900CCC66A /* LoadGistRequestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1373CBE02BFCC55F00CCC66A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBE12BFCC57400CCC66A /* Encodable+extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,11 +391,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1373CBD62BFC26EB00CCC66A /* NetworkService.swift in Sources */,
+				1373CBDB2BFCC1B100CCC66A /* GistRequestProvider.swift in Sources */,
 				1373CBC72BFC194500CCC66A /* HomeListViewModel.swift in Sources */,
+				1373CBE22BFCC57400CCC66A /* Encodable+extensions.swift in Sources */,
 				1373CB8C2BFC126400CCC66A /* AppDelegate.swift in Sources */,
 				1373CBCD2BFC19B700CCC66A /* HomeListTableViewCell.swift in Sources */,
+				1373CBDF2BFCC29900CCC66A /* LoadGistRequestModel.swift in Sources */,
 				1373CBCB2BFC199400CCC66A /* HomeListView.swift in Sources */,
 				1373CBD22BFC23C000CCC66A /* HomeListView+UITableViewDelegate.swift in Sources */,
+				1373CBD82BFCBEDB00CCC66A /* NetworkServiceError.swift in Sources */,
 				1373CBD42BFC23FB00CCC66A /* HomeListView+UITableViewDataSource.swift in Sources */,
 				1373CB8E2BFC126400CCC66A /* SceneDelegate.swift in Sources */,
 				1373CBC22BFC18FA00CCC66A /* HomeListViewController.swift in Sources */,

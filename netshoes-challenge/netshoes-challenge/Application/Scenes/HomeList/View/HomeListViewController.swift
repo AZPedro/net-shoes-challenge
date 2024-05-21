@@ -33,13 +33,18 @@ final class HomeListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         bind()
+        loadData()
     }
     
     // MARK: - Private functions
 
+    private func loadData() {
+        viewModel.loadGists(for: 1, quantity: 10)
+    }
+    
     private func bind() {
         
         viewModel.onloadGistsResult = { [weak self] in

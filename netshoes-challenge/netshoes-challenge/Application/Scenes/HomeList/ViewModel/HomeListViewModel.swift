@@ -8,15 +8,25 @@ import Foundation
 
 final class HomeListViewModel: HomeListViewModelProtocol {
     
+    private let provider: GistRequestProviderProtocol
+    
     var onloadGistsResult: (() -> Void)?
     var onShowError: ((String) -> Void)?
     
+    init(provider: GistRequestProviderProtocol) {
+        self.provider = provider
+    }
+    
     func loadGists(for page: Int, quantity: Int) {
+        let requestModel = LoadGistRequestModel(page: "\(page)", quantity: "\(quantity)")
         
-        DispatchQueue.global().asyncAfter(deadline: .now() + 3, execute: { [weak self] in
-            guard let self else { return }
-            self.onloadGistsResult?()
-        })
-        
+        provider.loadGists(requestModel: requestModel) { [weak self] (result: Result<String, Error>) in
+            switch result {
+            case .success(let model):
+                self?.onloadGistsResult?()
+            case .failure(let error):
+                self?.onShowError?("Error")
+            }
+        }
     }
 }

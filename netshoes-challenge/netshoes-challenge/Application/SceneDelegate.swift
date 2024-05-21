@@ -20,8 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
         let window = UIWindow(windowScene: windowScene)
         
-        let homeListViewModel = HomeListViewModel()
+        let networkService = NetworkService()
+        let gistProvider = GistRequestProvider(service: networkService)
+        
+        let homeListViewModel = HomeListViewModel(provider: gistProvider)
         let homeListViewController = HomeListViewController(viewModel: homeListViewModel)
+        
         window.rootViewController = homeListViewController
         
         self.window = window
