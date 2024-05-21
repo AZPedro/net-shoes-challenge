@@ -42,13 +42,13 @@ final class HomeListViewController: UIViewController {
     // MARK: - Private functions
 
     private func loadData() {
-        viewModel.loadGists(for: 1, quantity: 10)
+        viewModel.loadGists(for: 1, quantity: 30)
     }
     
     private func bind() {
         
-        viewModel.onloadGistsResult = { [weak self] in
-            
+        viewModel.onloadGistsResult = { [weak self] models in
+            self?.homeView.models = models
         }
         
         viewModel.onShowError = { [weak self] _ in

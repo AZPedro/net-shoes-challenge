@@ -7,6 +7,11 @@
 
 import UIKit
 
+struct HomeListCellModel {
+    let name: String
+    let quantity: String
+}
+
 final class HomeListTableViewCell: UITableViewCell {
     
     // MARK: - Constants
@@ -67,16 +72,23 @@ final class HomeListTableViewCell: UITableViewCell {
     }()
     
     private lazy var nameInfoComponentView: InfoDetailComponentView = {
-        let view = InfoDetailComponentView()
-        view.model = .init(title: "Usuário - ", value: "AZPedro")
+        let view = InfoDetailComponentView(title: "Usuário - ")
         return view
     }()
     
     private lazy var fileInfoComponentView: InfoDetailComponentView = {
-        let view = InfoDetailComponentView()
-        view.model = .init(title: "Arquivos - ", value: "13")
+        let view = InfoDetailComponentView(title: "Arquivos - ")
         return view
     }()
+    
+    // MARK: - Properties
+    
+    var model: HomeListCellModel? {
+        didSet {
+            guard let model else { return }
+            self.updateUI(model: model)
+        }
+    }
     
     // MARK: - LifeCycle
     
@@ -99,5 +111,10 @@ final class HomeListTableViewCell: UITableViewCell {
             horizontalStackContent.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Constants.leftTopBottomMargins),
             horizontalStackContent.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
         ])
+    }
+    
+    private func updateUI(model: HomeListCellModel) {
+        nameInfoComponentView.model = .init(value: model.name)
+        fileInfoComponentView.model = .init(value: model.quantity)
     }
 }

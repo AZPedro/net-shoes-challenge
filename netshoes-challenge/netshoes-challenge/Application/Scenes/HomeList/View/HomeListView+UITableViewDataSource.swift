@@ -8,8 +8,9 @@
 import UIKit
 
 extension HomeListView: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return models.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -17,7 +18,11 @@ extension HomeListView: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeListTableViewCell.Constants.cellIdentifier, for: indexPath) as? HomeListTableViewCell else {
             return UITableViewCell()
         }
-
+        
+        let model = models[indexPath.row]
+        cell.model = .init(name: model.name, 
+                           quantity: model.quantity)
+        
         return cell
     }
 

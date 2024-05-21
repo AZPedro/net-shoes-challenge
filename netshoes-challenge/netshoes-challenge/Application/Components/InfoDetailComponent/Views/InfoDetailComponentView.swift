@@ -30,6 +30,7 @@ final class InfoDetailComponentView: UIView {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.systemGray
+        label.text = title
         label.font = UIFont.systemFont(ofSize: Constants.fontSize, weight: .bold)
         return label
     }()
@@ -43,6 +44,8 @@ final class InfoDetailComponentView: UIView {
     
     // MARK: - Properties
     
+    private let title: String
+    
     var model: InfoDetailComponentModel? {
         didSet {
             guard let model else { return }
@@ -52,7 +55,8 @@ final class InfoDetailComponentView: UIView {
     
     // MARK: - LifeCycle
     
-    init() {
+    init(title: String) {
+        self.title = title
         super.init(frame: .zero)
         setupIU()
     }
@@ -75,7 +79,8 @@ final class InfoDetailComponentView: UIView {
     }
     
     private func updateUI(model: InfoDetailComponentModel) {
-        titleLabel.text = model.title
-        valueLabel.text = model.value
+        DispatchQueue.main.async {
+            self.valueLabel.text = model.value
+        }
     }
 }

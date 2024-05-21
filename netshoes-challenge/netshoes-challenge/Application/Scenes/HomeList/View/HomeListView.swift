@@ -39,6 +39,12 @@ final class HomeListView: UIView {
     
     weak var delegate: HomeListViewDelegate?
     
+    var models: [HomeListModel] = [] {
+        didSet {
+            updateUI()
+        }
+    }
+    
     // MARK: - LifeCycle
     
     init() {
@@ -62,5 +68,11 @@ final class HomeListView: UIView {
             tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor)
         ])
+    }
+    
+    private func updateUI() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }

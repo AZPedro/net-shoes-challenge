@@ -9,6 +9,6 @@ import Foundation
 
 protocol HomeListViewModelProtocol {
     func loadGists(for page: Int, quantity: Int)
-    var onloadGistsResult: (() -> Void)? { get set }
+    var onloadGistsResult: (([HomeListModel]) -> Void)? { get set }
     var onShowError: ((String) -> Void)? { get set }
 }

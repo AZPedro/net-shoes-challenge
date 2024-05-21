@@ -31,6 +31,7 @@
 		13B54A682BFD3F500054513D /* FileModelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B54A672BFD3F500054513D /* FileModelDTO.swift */; };
 		13B54A6B2BFD49130054513D /* InfoDetailComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B54A6A2BFD49130054513D /* InfoDetailComponentView.swift */; };
 		13B54A702BFD49540054513D /* InfoDetailComponentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B54A6F2BFD49540054513D /* InfoDetailComponentModel.swift */; };
+		13B54A732BFD4D960054513D /* HomeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B54A722BFD4D960054513D /* HomeListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		13B54A672BFD3F500054513D /* FileModelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModelDTO.swift; sourceTree = "<group>"; };
 		13B54A6A2BFD49130054513D /* InfoDetailComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailComponentView.swift; sourceTree = "<group>"; };
 		13B54A6F2BFD49540054513D /* InfoDetailComponentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailComponentModel.swift; sourceTree = "<group>"; };
+		13B54A722BFD4D960054513D /* HomeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,9 +206,8 @@
 		1373CBC32BFC18FF00CCC66A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1373CBE42BFCCCAC00CCC66A /* HomeListModelDTO.swift */,
-				13B54A652BFD3F270054513D /* OwnerModelDTO.swift */,
-				13B54A672BFD3F500054513D /* FileModelDTO.swift */,
+				13B54A712BFD4CB50054513D /* DTO */,
+				13B54A722BFD4D960054513D /* HomeListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +307,16 @@
 				13B54A6F2BFD49540054513D /* InfoDetailComponentModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		13B54A712BFD4CB50054513D /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				1373CBE42BFCCCAC00CCC66A /* HomeListModelDTO.swift */,
+				13B54A652BFD3F270054513D /* OwnerModelDTO.swift */,
+				13B54A672BFD3F500054513D /* FileModelDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B54A732BFD4D960054513D /* HomeListModel.swift in Sources */,
 				1373CBD62BFC26EB00CCC66A /* NetworkService.swift in Sources */,
 				13B54A662BFD3F270054513D /* OwnerModelDTO.swift in Sources */,
 				1373CBDB2BFCC1B100CCC66A /* GistRequestProvider.swift in Sources */,
