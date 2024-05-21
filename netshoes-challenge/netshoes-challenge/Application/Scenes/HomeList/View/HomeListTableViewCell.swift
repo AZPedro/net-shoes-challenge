@@ -117,4 +117,10 @@ final class HomeListTableViewCell: UITableViewCell {
         nameInfoComponentView.model = .init(value: model.name)
         fileInfoComponentView.model = .init(value: model.quantity)
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        nameInfoComponentView.model = .init(value: "")
+        fileInfoComponentView.model = .init(value: "")
+    }
 }

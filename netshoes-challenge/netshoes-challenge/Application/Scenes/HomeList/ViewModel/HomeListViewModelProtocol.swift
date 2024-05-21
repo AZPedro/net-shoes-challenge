@@ -8,7 +8,11 @@
 import Foundation
 
 protocol HomeListViewModelProtocol {
-    func loadGists(for page: Int, quantity: Int)
+    
+    var models: [HomeListModel] { get set }
     var onloadGistsResult: (([HomeListModel]) -> Void)? { get set }
     var onShowError: ((String) -> Void)? { get set }
+    
+    func loadGists(for page: Int, quantity: Int)
+    func loadGistNextPage()
 }

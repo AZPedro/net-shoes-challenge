@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeListViewDelegate: AnyObject {
-    
+    func homeListView(_ view: HomeListView, willDisplay row: Int)
 }
 
 final class HomeListView: UIView {

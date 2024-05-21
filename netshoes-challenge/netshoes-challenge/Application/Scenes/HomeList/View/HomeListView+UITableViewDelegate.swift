@@ -13,4 +13,8 @@ extension HomeListView: UITableViewDelegate {
         return Constants.cellHeight
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        delegate?.homeListView(self, willDisplay: indexPath.row)
+    }
+    
 }

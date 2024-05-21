@@ -42,7 +42,7 @@ final class HomeListViewController: UIViewController {
     // MARK: - Private functions
 
     private func loadData() {
-        viewModel.loadGists(for: 1, quantity: 30)
+        viewModel.loadGists()
     }
     
     private func bind() {
@@ -60,5 +60,8 @@ final class HomeListViewController: UIViewController {
 // MARK: - HomeListViewDelegate
 
 extension HomeListViewController: HomeListViewDelegate {
-    
+    func homeListView(_ view: HomeListView, willDisplay row: Int) {
+        guard row >= viewModel.models.count - 5 else { return }
+        viewModel.loadGistNextPage()
+    }
 }
