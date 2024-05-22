@@ -36,7 +36,6 @@ final class HomeListViewModel: HomeListViewModelProtocol {
     // MARK: - Functions
     
     func loadGists(for page: Int = 1, quantity: Int = 10) {
-        print("loading - \(page)")
         currentPage = page
         isLoading = true
         let requestModel = LoadGistRequestModel(page: "\(page)", quantity: "\(quantity)")
