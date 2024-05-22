@@ -8,6 +8,7 @@
 import UIKit
 
 protocol HomeListViewDelegate: AnyObject {
+    func homeListView(_ view: HomeListView, didSelect model: HomeListModel)
     func homeListView(_ view: HomeListView, willDisplay row: Int)
 }
 
@@ -72,7 +73,9 @@ final class HomeListView: UIView {
     
     private func updateUI() {
         DispatchQueue.main.async {
-            self.tableView.reloadData()
+            UIView.performWithoutAnimation {
+                self.tableView.reloadData()
+            }
         }
     }
 }

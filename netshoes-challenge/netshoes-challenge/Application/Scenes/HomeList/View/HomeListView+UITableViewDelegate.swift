@@ -17,4 +17,7 @@ extension HomeListView: UITableViewDelegate {
         delegate?.homeListView(self, willDisplay: indexPath.row)
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.homeListView(self, didSelect: models[indexPath.row])
+    }
 }

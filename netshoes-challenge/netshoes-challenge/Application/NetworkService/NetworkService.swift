@@ -47,7 +47,11 @@ final class NetworkService: NetworkServiceProtocol {
                     let model = try JSONDecoder().decode(T.self, from: data)
                     completion?(.success(model))
                 } catch {
-                    completion?(.failure(error))
+                    if let apiError = try? JSONDecoder().decode(ErrorModel.self, from: data) {
+                        completion?(.failure(NetworkServiceError.apiError(apiError)))
+                    } else {
+                        completion?(.failure(error))
+                    }
                 }
                 
             } else if let error = error {

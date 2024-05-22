@@ -26,15 +26,15 @@ final class HomeListViewController: UIViewController {
     init(viewModel: HomeListViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        self.view = homeView
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view = homeView
         bind()
         loadData()
     }
@@ -51,8 +51,23 @@ final class HomeListViewController: UIViewController {
             self?.homeView.models = models
         }
         
-        viewModel.onShowError = { [weak self] _ in
-            print("Alertar error aqui")
+        viewModel.onShowError = { [weak self] message in
+            self?.showErrorAlert(message: message)
+        }
+    }
+    
+    private func showDetails(for model: DetailsModel) {
+        let detailsViewModel = DetailsViewModel(model: model)
+        let detailsViewController = DetailsViewController(viewModel: detailsViewModel)
+    
+        self.navigationController?.pushViewController(detailsViewController, animated: true)
+    }
+    
+    private func showErrorAlert(message: String) {
+        let alertViewController = UIAlertController(title: "Ops..!", message: message, preferredStyle: .alert)
+        alertViewController.addAction(.init(title: "Ok", style: .default, handler: nil))
+        DispatchQueue.main.async {
+            self.navigationController?.present(alertViewController, animated: true)
         }
     }
 }
@@ -60,8 +75,15 @@ final class HomeListViewController: UIViewController {
 // MARK: - HomeListViewDelegate
 
 extension HomeListViewController: HomeListViewDelegate {
+    
     func homeListView(_ view: HomeListView, willDisplay row: Int) {
         guard row >= viewModel.models.count - 5 else { return }
         viewModel.loadGistNextPage()
+    }
+    
+    func homeListView(_ view: HomeListView, didSelect model: HomeListModel) {
+        
+        let detailsModel: DetailsModel = .init(name: model.name, image: model.image)
+        showDetails(for: detailsModel)
     }
 }

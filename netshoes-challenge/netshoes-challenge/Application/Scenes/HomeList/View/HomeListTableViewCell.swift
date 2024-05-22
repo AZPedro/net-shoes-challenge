@@ -56,7 +56,6 @@ final class HomeListTableViewCell: UITableViewCell {
         
         view.widthAnchor.constraint(equalToConstant: Constants.avatarImageSize).isActive = true
         view.heightAnchor.constraint(equalToConstant: Constants.avatarImageSize).isActive = true
-        view.backgroundColor = .red
         
         return view
     }()

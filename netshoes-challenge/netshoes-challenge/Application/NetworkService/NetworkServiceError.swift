@@ -9,11 +9,18 @@ import Foundation
 
 enum NetworkServiceError: Error {
     case invalidData
+    case apiError(ErrorModel)
     
     var message: String {
         switch self {
         case .invalidData:
-            "Invalid return data"
+            return "Invalid data"
+        case .apiError(let model):
+            return model.message
         }
     }
+}
+
+struct ErrorModel: Decodable {
+    let message: String
 }

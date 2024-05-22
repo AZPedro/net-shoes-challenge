@@ -58,7 +58,20 @@ final class HomeListViewModel: HomeListViewModelProtocol {
                 self?.onloadGistsResult?(models)
                 
             case .failure(let error):
-                self?.onShowError?("Error")
+                self?.handleError(error: error)
+            }
+        }
+    }
+    
+    private func handleError(error: Error) {
+        let fallBackErrorMessage: String = "Ops.. Não foi possível recuperar a lista de gists no momento."
+        
+        if let error = error as? NetworkServiceError {
+            switch error {
+            case .apiError(let errorModel):
+                onShowError?(errorModel.message)
+            default:
+                onShowError?(fallBackErrorMessage)
             }
         }
     }
